@@ -142,7 +142,7 @@
 }
 
 .about-brand-logo {
-  height: 44px; /* Bold height matching h-40px from elementor */
+  height: 75px; /* Enlarged height to ensure crystal-clear legibility for text-based logos */
   width: auto;
   object-fit: contain;
   opacity: 1; /* Beautifully full-color as shown in reference */
@@ -164,7 +164,7 @@
     justify-content: center;
   }
   .about-brand-logo {
-    height: 32px;
+    height: 50px; /* Visually prominent height on mobile */
   }
 }
 
@@ -479,72 +479,173 @@
   transform: translateX(4px);
 }
 
-.about-team {
-  padding: 6rem 0;
-  background-color: #fff;
-  text-align: center;
+.about-executive-team {
+  padding: 8rem 0;
+  background-color: var(--background);
 }
 
-.team-title {
-  font-size: 3rem;
-  font-weight: 800;
+.executive-team-title {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
   margin-bottom: 4rem;
   color: #111;
+  letter-spacing: -0.02em;
 }
 
-.team-grid {
+.dark .executive-team-title {
+  color: #ffffff;
+}
+
+.executive-team-grid {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-.team-card {
+.executive-team-member {
+  flex: 1;
+  max-width: 380px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.team-avatar {
-  width: 250px;
-  height: 250px;
-  background-color: #e5e7eb;
+.executive-team-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: var(--radius-xl);
   margin-bottom: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-.team-card h3 {
+.dark .executive-team-img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.executive-team-member:hover .executive-team-img {
+  transform: translateY(-5px);
+}
+
+.executive-team-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.executive-team-name {
   font-size: 1.5rem;
   font-weight: 700;
   color: #111;
+  margin: 0;
+}
+
+.dark .executive-team-name {
+  color: #ffffff;
+}
+
+.executive-team-role {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+.dark .executive-team-role {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .about-cta {
-  background-color: var(--highlight);
+  background-color: #f6f1eb; /* Clean warm beige matching rest of about page */
   padding: 8rem 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.cta-container h2 {
-  font-size: 3.5rem;
+.dark .about-cta {
+  background-color: rgba(255, 255, 255, 0.04); /* Precise match for user's dark mode container bg */
+}
+
+.cta-container {
+  position: relative;
+  z-index: 10;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 3rem; /* Elegant high-fidelity size matching reference */
   font-weight: 800;
-  color: var(--highlight-text);
-  margin-bottom: 1rem;
-  line-height: 1.1;
-  max-width: 900px;
+  color: #111111;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.02em;
+}
+
+.dark .cta-title {
+  color: #ffffff;
+}
+
+.cta-desc {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.cta-container p {
-  font-size: 1.5rem;
-  color: var(--highlight-text);
-  margin-bottom: 3rem;
-  opacity: 0.9;
+.dark .cta-desc {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .cta-container .button {
   padding: 1.2rem 3rem;
   font-size: 1.125rem;
   border-radius: var(--radius-pill);
+}
+
+/* Floating Stars for CTA */
+.cta-star {
+  position: absolute;
+  width: 32px; /* Small and elegant size to match reference */
+  height: 32px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cta-star img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cta-star-left {
+  bottom: 36%; /* Align directly below second line of header */
+  left: 24%; /* Pull tightly inside to frame the text */
+  transform: rotate(45deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.cta-star-right {
+  top: 42%; /* Align horizontally with the text gap */
+  right: 24%; /* Mirror position on the right */
+  transform: rotate(45deg);
+  animation: float 7s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(45deg); }
+  50% { transform: translateY(-12px) rotate(45deg); }
+  100% { transform: translateY(0) rotate(45deg); }
 }
 
 @media (max-width: 992px) {
