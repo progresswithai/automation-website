@@ -4,13 +4,13 @@ import { useState } from "react";
 import "./FAQ.css";
 import Link from "next/link";
 
-export default function FAQ({ customFaqs, customTitle, customSubtitle }: { customFaqs?: {question: string, answer: string}[], customTitle?: string, customSubtitle?: string }) {
+export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const defaultFaqs = [
+  const faqs = [
     {
       question: "What exactly does The AI Automation Agency offer?",
-      answer: "We provide expert advisory services to help you identify the best automation opportunities, recommend the right AI tools and systems, and assist your team or vendors through the implementation process. We don't directly implement systems ourselves but guide you at every step to ensure successful adoption."
+      answer: "We provide expert advisory services to help you identify the best automation opportunities, recommend the right AI tools and systems, and assist your team or vendors through the implementation process. We don’t directly implement systems ourselves but guide you at every step to ensure successful adoption."
     },
     {
       question: "Do I need technical expertise to work with you?",
@@ -22,7 +22,7 @@ export default function FAQ({ customFaqs, customTitle, customSubtitle }: { custo
     },
     {
       question: "Can you guarantee automation will increase my revenue or productivity?",
-      answer: "While results depend on various factors, we base our recommendations on proven strategies used by our clients, who have grown their revenues significantly with automation. We focus on measurable ROI and continuous optimisation."
+      answer: "While results depend on various factors, we base our recommendations on proven strategies used by clients like Boiler Central and Value Doors, who have grown their revenues significantly with automation. We focus on measurable ROI and continuous optimisation."
     },
     {
       question: "What kinds of processes can be automated?",
@@ -31,45 +31,86 @@ export default function FAQ({ customFaqs, customTitle, customSubtitle }: { custo
     {
       question: "Will automation replace my employees?",
       answer: "No, automation is designed to augment and empower your team by handling repetitive tasks and enabling them to work more strategically and creatively."
+    },
+    {
+      question: "How do you help with selecting automation software or vendors?",
+      answer: "We use a comprehensive vendor evaluation checklist considering functionality, ease of use, integration potential, scalability, security, and cost-effectiveness to recommend the right platforms tailored to your needs."
+    },
+    {
+      question: "What does your advisory roadmap look like?",
+      answer: "Our phased advisory approach starts with a thorough assessment, followed by strategic tool recommendations, integration guidance, and ongoing measurement and optimisation to ensure your automation scales effectively and delivers ongoing value."
     }
   ];
-
-  const faqs = customFaqs || defaultFaqs;
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section id="advice" className="faq-section">
+    <section id="faq" className="faq-section">
       <div className="container faq-container">
-        <div className="faq-header animate-fade-in">
-          <h2 className="faq-title">{customTitle || "Frequently Asked Questions"}</h2>
-          {customSubtitle ? (
-            <p className="faq-subtitle">{customSubtitle}</p>
-          ) : (
-            <p className="faq-subtitle">These FAQs are based on the real, pressing questions our clients asked and our answers to for complete clarity!</p>
-          )}
-          <Link href="#contact" className="faq-link">Still have a question?</Link>
-        </div>
         
-        <div className="faq-list animate-fade-in delay-100">
-          {faqs.map((faq, index) => (
-            <div key={index} className={`faq-item ${openIndex === index ? 'open' : ''}`}>
-              <button 
-                className="faq-question" 
-                onClick={() => toggleFaq(index)}
-                aria-expanded={openIndex === index}
-              >
-                <span>{faq.question}</span>
-                <span className="faq-icon">{openIndex === index ? '−' : '+'}</span>
-              </button>
-              <div className="faq-answer-wrapper" style={{ maxHeight: openIndex === index ? '300px' : '0' }}>
-                <p className="faq-answer">{faq.answer}</p>
+        {/* Left Column (Sticky) */}
+        <div className="faq-left-col">
+          <div className="faq-sticky-wrapper">
+            
+            {/* Section Pill Badge */}
+            <div className="faq-badge-wrapper animate-fade-in">
+              <div className="faq-badge">
+                <span className="faq-badge-dot"></span>
+                FAQs
               </div>
             </div>
-          ))}
+
+            {/* Title & Description */}
+            <h2 className="faq-title animate-fade-in">Frequently Asked Questions</h2>
+            <p className="faq-subtitle animate-fade-in">
+              These FAQs are based on the real, pressing questions our clients asked and our answers to for complete clarity!
+            </p>
+
+            {/* CTA Button */}
+            <div className="faq-cta-wrapper animate-fade-in">
+              <Link href="/contact-us" className="faq-btn">
+                Still have a question?
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="faq-btn-arrow">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
+            </div>
+
+          </div>
         </div>
+
+        {/* Right Column (Accordion List) */}
+        <div className="faq-right-col animate-fade-in">
+          <div className="faq-accordion-list">
+            {faqs.map((faq, index) => {
+              const isOpen = openIndex === index;
+              return (
+                <div key={index} className={`faq-panel-item ${isOpen ? 'open' : ''}`}>
+                  <button 
+                    className="faq-panel-trigger" 
+                    onClick={() => toggleFaq(index)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className="faq-question-text">{faq.question}</span>
+                    <span className="faq-arrow-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 9L12 16L5 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                  </button>
+                  <div className="faq-answer-container" style={{ maxHeight: isOpen ? '250px' : '0' }}>
+                    <div className="faq-answer-inner">
+                      <p className="faq-answer-text">{faq.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
       </div>
     </section>
   );
