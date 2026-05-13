@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import { AgencyIntro, AiTrap, HandsOff, LatestPosts, FinalCTA } from "@/components/HomepageExtras";
+import { LatestPosts, FinalCTA } from "@/components/HomepageExtras";
 import Features from "@/components/Features";
 import Pricing from "@/components/Pricing";
 import Testimonials from "@/components/Testimonials";
@@ -13,10 +13,7 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
-      <AgencyIntro />
       <Features />
-      <AiTrap />
-      <HandsOff />
       <Pricing />
       <Testimonials />
       <FAQ />
@@ -30,3 +27,4 @@ export default function Home() {
     </main>
   );
 }
+
