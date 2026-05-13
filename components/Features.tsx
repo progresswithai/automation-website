@@ -181,10 +181,120 @@ export default function Features() {
           </div>
         </div>
 
+        {/* Top AI Systems Section */}
+        <div className="top-systems-section animate-fade-in">
+          <div className="systems-badge-wrapper">
+            <div className="systems-badge">
+              <span className="systems-badge-dot"></span>
+              Top AI Systems
+            </div>
+          </div>
+          <p className="systems-description">
+            Boost efficiency and growth with smart automation - AI chatbots, CRM systems, and reporting dashboards that streamline operations, reduce costs, and enhance customer engagement
+          </p>
+
+          <div className="systems-grid">
+            {/* Card 1 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/zap.svg" 
+                  alt="CRM Automation" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">CRM Automation</h3>
+            </div>
+
+            {/* Card 2 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/database.svg" 
+                  alt="Financial Automation" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">Financial Automation</h3>
+            </div>
+
+            {/* Card 3 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/puzzle.svg" 
+                  alt="Workflow Automation" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">Workflow Automation</h3>
+            </div>
+
+            {/* Card 4 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/target.svg" 
+                  alt="Marketing Automation" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">Marketing Automation</h3>
+            </div>
+
+            {/* Card 5 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/line-chart.svg" 
+                  alt="Chatbots" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">Chatbots</h3>
+            </div>
+
+            {/* Card 6 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/settings.svg" 
+                  alt="Business Process Automation" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">Business Process Automation</h3>
+            </div>
+
+            {/* Card 7 */}
+            <div className="system-card">
+              <div className="system-icon-box">
+                <img 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/database.svg" 
+                  alt="HR Automation" 
+                  className="system-icon" 
+                />
+              </div>
+              <h3 className="system-card-title">HR Automation</h3>
+            </div>
+
+            {/* Card 8: View All */}
+            <div className="system-card-more">
+              <Link href="/contact-us" className="system-more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
+              <span className="system-more-text">View all features</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
 }
+
 
 
 
