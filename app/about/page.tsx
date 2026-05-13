@@ -202,14 +202,50 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <Team />
+      {/* Executive Team Section */}
+      <section className="about-executive-team">
+        <div className="container">
+          <h2 className="executive-team-title">Our Executive Team</h2>
+          <div className="executive-team-grid">
+            <div className="executive-team-member">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="executive-team-img" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg" alt="Myles Robinson" />
+              <div className="executive-team-info">
+                <h6 className="executive-team-name">Myles Robinson</h6>
+                <span className="executive-team-role">Founder & CEO</span>
+              </div>
+            </div>
+            <div className="executive-team-member">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="executive-team-img" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Jamie-Robinson-2.png" alt="Jamie Robinson" />
+              <div className="executive-team-info">
+                <h6 className="executive-team-name">Jamie Robinson</h6>
+                <span className="executive-team-role">Strategist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="about-cta">
-        <div className="container cta-container">
-          <h2>We're looking for businesses who want to get 10 steps ahead</h2>
-          <p>let us turn your business into a automation machine.</p>
+        <div className="container cta-container relative">
+          {/* Decorative Stars */}
+          <div className="cta-star cta-star-left">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img decoding="async" className="block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/star-1.svg" loading="lazy" alt="Star" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img decoding="async" className="hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/star-white-1.svg" loading="lazy" alt="Star Dark" />
+          </div>
+          <div className="cta-star cta-star-right">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img decoding="async" className="block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/star-2.svg" loading="lazy" alt="Star" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img decoding="async" className="hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/star-white-2.svg" loading="lazy" alt="Star Dark" />
+          </div>
+
+          <h2 className="cta-title">We’re looking for businesses who want to get 10 steps ahead</h2>
+          <p className="cta-desc">let us turn your business into a automation machine.</p>
           <Link href="/contact-us" className="button button-primary">Book Call</Link>
         </div>
       </section>
