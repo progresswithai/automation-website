@@ -1,7 +1,7 @@
 import "./Testimonials.css";
 
-export default function Testimonials() {
-  const testimonials = [
+export default function Testimonials({ customTestimonials, customTitle }: { customTestimonials?: {text: string, author: string}[], customTitle?: React.ReactNode }) {
+  const defaultTestimonials = [
     {
       text: "This team made AI simple and accessible for my small business. They automated repetitive tasks and saved us hours every week. I finally have time to focus on growth instead of paperwork.",
       author: "London Lawyer Client"
@@ -20,12 +20,18 @@ export default function Testimonials() {
     }
   ];
 
+  const testimonials = customTestimonials || defaultTestimonials;
+
   return (
     <section className="testimonials-section">
       <div className="container">
-        <h2 className="testimonials-title animate-fade-in">
-          Don't just take our <span className="title-highlight-wrapper"><span className="title-highlight">words.</span></span>
-        </h2>
+        {customTitle ? (
+          customTitle
+        ) : (
+          <h2 className="testimonials-title animate-fade-in">
+            Don't just take our <span className="title-highlight-wrapper"><span className="title-highlight">words.</span></span>
+          </h2>
+        )}
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-card animate-fade-in" style={{animationDelay: `${index * 100}ms`}}>

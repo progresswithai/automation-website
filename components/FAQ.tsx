@@ -4,10 +4,10 @@ import { useState } from "react";
 import "./FAQ.css";
 import Link from "next/link";
 
-export default function FAQ() {
+export default function FAQ({ customFaqs, customTitle, customSubtitle }: { customFaqs?: {question: string, answer: string}[], customTitle?: string, customSubtitle?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
+  const defaultFaqs = [
     {
       question: "What exactly does The AI Automation Agency offer?",
       answer: "We provide expert advisory services to help you identify the best automation opportunities, recommend the right AI tools and systems, and assist your team or vendors through the implementation process. We don't directly implement systems ourselves but guide you at every step to ensure successful adoption."
@@ -34,6 +34,8 @@ export default function FAQ() {
     }
   ];
 
+  const faqs = customFaqs || defaultFaqs;
+
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -42,8 +44,12 @@ export default function FAQ() {
     <section id="advice" className="faq-section">
       <div className="container faq-container">
         <div className="faq-header animate-fade-in">
-          <h2 className="faq-title">Frequently Asked Questions</h2>
-          <p className="faq-subtitle">These FAQs are based on the real, pressing questions our clients asked and our answers to for complete clarity!</p>
+          <h2 className="faq-title">{customTitle || "Frequently Asked Questions"}</h2>
+          {customSubtitle ? (
+            <p className="faq-subtitle">{customSubtitle}</p>
+          ) : (
+            <p className="faq-subtitle">These FAQs are based on the real, pressing questions our clients asked and our answers to for complete clarity!</p>
+          )}
           <Link href="#contact" className="faq-link">Still have a question?</Link>
         </div>
         

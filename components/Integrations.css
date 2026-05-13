@@ -1,0 +1,101 @@
+.integrations-section {
+  padding: 10rem 0 6rem;
+  background-color: var(--background);
+}
+
+.integrations-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.integrations-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #f3f4f6;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.integrations-header h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.integrations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.integration-card {
+  background-color: #f9fafb;
+  padding: 3rem 2rem;
+  border-radius: var(--radius-xl);
+  transition: transform 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.integration-card:hover {
+  transform: translateY(-5px);
+  border-color: #e5e7eb;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.integration-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.integration-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.integration-card p {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.integration-link {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: color 0.2s ease;
+}
+
+.integration-link:hover {
+  color: #111;
+}
+
+@media (max-width: 992px) {
+  .integrations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .integrations-grid {
+    grid-template-columns: 1fr;
+  }
+  .integrations-header h2 {
+    font-size: 2.5rem;
+  }
+}
