@@ -1,0 +1,135 @@
+.pricing {
+  background-color: var(--background);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pricing-subtitle {
+  font-size: 1.25rem;
+  color: #a1a1aa;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.pricing-card {
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card.popular {
+  background: rgba(30, 30, 35, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.1);
+  padding: 4rem 2rem;
+}
+
+.popular-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pricing-card-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 2rem;
+}
+
+.pricing-tier {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pricing-price {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.pricing-desc {
+  color: #a1a1aa;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.pricing-features {
+  list-style: none;
+  margin-bottom: 2.5rem;
+  flex-grow: 1;
+}
+
+.pricing-features li {
+  padding: 0.75rem 0;
+  color: #e4e4e7;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pricing-features li::before {
+  content: "✓";
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.pricing-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.pricing-guarantee {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #71717a;
+}
+
+.pricing-tax-note {
+  text-align: center;
+  color: #71717a;
+  margin-top: 3rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .pricing-card.popular {
+    padding: 3rem 2rem;
+  }
+}
