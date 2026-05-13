@@ -1,53 +1,197 @@
 .team-section {
-  padding: 6rem 0;
-  background-color: #fff;
-  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+  padding: 8rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.team-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Badge Styles */
+.team-badge-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+.team-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.team-badge-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+/* Section Header */
 .team-header {
-  margin-bottom: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.team-title {
-  font-size: 3rem;
+.team-section-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
   font-weight: 800;
-  color: #111;
+  color: #111111;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.25rem 0;
+  line-height: 1.15;
 }
 
-.team-subtitle {
-  font-size: 1.125rem;
+.team-highlight {
+  display: inline-flex;
+  padding: 0.1rem 0.9rem;
+  background-color: var(--highlight);
+  color: var(--primary);
+  transform: rotate(-1.5deg);
+  border-radius: 0.5rem;
+  font-weight: 800;
+  margin: 0 0.4rem;
+}
+
+.team-section-subtitle {
+  font-size: 1.15rem;
   color: #4b5563;
-  margin-top: 1rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
+/* Members Grid Layout */
 .team-grid {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.team-card {
+/* Member Card Styles */
+.member-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 1.5rem;
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  min-width: 300px;
+  flex: 1;
+  max-width: 440px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.team-avatar {
-  width: 250px;
-  height: 250px;
-  background-color: #e5e7eb;
-  border-radius: var(--radius-xl);
+.member-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(27, 122, 99, 0.15);
+  box-shadow: 0 20px 40px rgba(27, 122, 99, 0.05);
+}
+
+/* Circular Avatar Box */
+.member-img-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.75rem;
+  background-color: #f3f4f6;
+  border: 3px solid #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-img-box {
+  transform: scale(1.05);
+}
+
+.member-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Member Info Details */
+.member-info {
   margin-bottom: 1.5rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.team-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #111;
+.member-name {
+  font-size: 1.35rem;
+  font-weight: 750;
+  color: #111111;
+  margin: 0 0 0.5rem 0;
 }
 
+.member-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Social Channels Rows */
+.member-socials {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.social-link {
+  width: 38px;
+  height: 38px;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-link:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Responsive Overrides */
 @media (max-width: 768px) {
+  .team-section {
+    padding: 6rem 1.5rem;
+  }
+  .team-header {
+    margin-bottom: 3.5rem;
+  }
   .team-grid {
-    flex-direction: column;
-    align-items: center;
+    gap: 2rem;
+  }
+  .member-card {
+    padding: 3rem 2rem;
+    min-width: 100%;
+  }
+  .member-img-box {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
   }
 }
