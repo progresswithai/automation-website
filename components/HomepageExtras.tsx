@@ -56,44 +56,167 @@ export function HandsOff() {
 }
 
 export function LatestPosts() {
-  const posts = [
-    { title: "Why Most UK Companies Fail With AI Automation", author: "Myles Robinson", date: "Oct 25, 2025" },
-    { title: "Why Choose AI Automation For Your Business Benefits", author: "Jamie Robinson", date: "Oct 23, 2025" },
-    { title: "AI in Business: The Ultimate Guide", author: "Myles Robinson", date: "Oct 20, 2025" },
-    { title: "How AI Is Transforming UK Home Improvement Companies", author: "Jamie Robinson", date: "Oct 18, 2025" }
+  const horizontalPosts = [
+    {
+      title: "Why Choose AI Automation For Your Business Benefits",
+      image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/Add-a-heading-960-x-640-px-768x403.jpg",
+      date: "October 23, 2025",
+      link: "https://theaiautomationagency.ai/why-choose-ai-automation-for-your-business-benefits/"
+    },
+    {
+      title: "AI in Business",
+      image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/ai-in-business-768x432.jpg",
+      date: "October 31, 2025",
+      link: "https://theaiautomationagency.ai/ai-in-business/"
+    },
+    {
+      title: "How AI Is Transforming UK Home Improvement Companies",
+      image: "https://theaiautomationagency.ai/wp-content/uploads/2025/11/ai-for-solar-and-heat-pumps-installation-768x432.png",
+      date: "November 10, 2025",
+      link: "https://theaiautomationagency.ai/how-ai-is-transforming-uk-home-improvement-companies/"
+    }
   ];
 
   return (
-    <section className="extra-section soft-bg">
-      <div className="container">
-        <div className="posts-header">
-          <h2 className="extra-title">Latest posts and updates</h2>
-          <Link href="/advice" className="view-all-link">View all posts →</Link>
-        </div>
-        <div className="posts-grid">
-          {posts.map((post, index) => (
-            <div key={index} className="post-card">
-              <div className="post-image-placeholder"></div>
-              <div className="post-content">
-                <span className="post-meta">{post.author} • {post.date}</span>
-                <h3 className="post-title"><Link href="/advice">{post.title}</Link></h3>
+    <section id="insights" className="insights-section">
+      <div className="container insights-container">
+        
+        {/* Insights Top Row */}
+        <div className="insights-header-row">
+          <div className="insights-header-left">
+            {/* Section Pill Badge */}
+            <div className="insights-badge-wrapper animate-fade-in">
+              <div className="insights-badge">
+                <span className="insights-badge-dot"></span>
+                Insights
               </div>
             </div>
-          ))}
+            
+            <h2 className="insights-section-title animate-fade-in">
+              Latest posts <span className="insights-highlight">and updates</span>
+            </h2>
+          </div>
+
+          <div className="insights-header-right animate-fade-in">
+            <Link href="https://theaiautomationagency.ai/category/guides/" target="_blank" className="insights-view-all-btn">
+              View all posts
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="insights-btn-arrow">
+                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Link>
+          </div>
         </div>
+
+        {/* Asymmetrical Grid Layout */}
+        <div className="insights-grid">
+          
+          {/* Column 1 (Left): Large Featured Card */}
+          <div className="insights-featured-col animate-fade-in">
+            <article className="featured-post-card">
+              <div className="featured-post-content">
+                <h3 className="featured-post-title">
+                  <Link href="https://theaiautomationagency.ai/why-most-uk-companies-fail-with-ai-automation/" target="_blank">
+                    Why Most UK Companies
+                  </Link>
+                </h3>
+                <p className="featured-post-excerpt">
+                  Artificial intelligence (AI) is transforming the way UK companies operate, promising faster processes, lower costs, and better customer experiences. Yet despite the hype, most UK
+                </p>
+                
+                {/* Author Info */}
+                <div className="featured-post-author-row">
+                  <Link href="https://theaiautomationagency.ai/author/myles-robinson/" target="_blank">
+                    <img 
+                      src="https://secure.gravatar.com/avatar/5005a3783e368fc84c1b7ea3c064158075d7602573f5bcbf5ce268c2dedba565?s=40&d=mm&r=g" 
+                      alt="Myles Robinson" 
+                      className="author-avatar-img"
+                    />
+                  </Link>
+                  <div className="author-meta-details">
+                    <Link href="https://theaiautomationagency.ai/author/myles-robinson/" target="_blank" className="author-meta-name">
+                      Myles Robinson
+                    </Link>
+                    <span className="author-meta-date">November 11, 2025</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          {/* Column 2 (Right): Horizontal List Stack */}
+          <div className="insights-list-col animate-fade-in">
+            <div className="horizontal-posts-stack">
+              {horizontalPosts.map((post, idx) => (
+                <article key={idx} className="horizontal-post-card">
+                  <div className="horizontal-card-inner">
+                    {/* Featured Image */}
+                    <div className="horizontal-post-img-box">
+                      <img src={post.image} alt={post.title} className="horizontal-post-img" />
+                    </div>
+                    
+                    {/* Details content */}
+                    <div className="horizontal-post-details">
+                      <span className="horizontal-post-date">{post.date}</span>
+                      <h4 className="horizontal-post-title">
+                        <Link href={post.link} target="_blank">
+                          {post.title}
+                        </Link>
+                      </h4>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
-}
-
-export function FinalCTA() {
+}export function FinalCTA() {
   return (
-    <section className="extra-section dark-bg">
-      <div className="container text-center-wrapper">
-        <h2 className="extra-title text-white">Speak to us today to get started</h2>
-        <div className="extra-action">
-          <Link href="/contact-us" className="button button-primary">Get started</Link>
+    <section className="final-cta-section">
+      <div className="container final-cta-container">
+        
+        {/* Floating Card Wrapper */}
+        <div className="final-cta-card">
+          <div className="final-cta-grid">
+            
+            {/* Left Content Column */}
+            <div className="final-cta-left">
+              <h2 className="final-cta-title">
+                The Future Belongs to Those Who Automate Today
+              </h2>
+              <p className="final-cta-subtitle">
+                Speak to us today to get started
+              </p>
+              
+              <div className="final-cta-action">
+                <Link href="https://theaiautomationagency.ai/contact-us/" target="_self" className="final-cta-btn">
+                  Get started
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="final-cta-btn-arrow">
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Graphic/Mockup Column */}
+            <div className="final-cta-right">
+              <div className="final-cta-img-box">
+                <img 
+                  loading="lazy" 
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/home-06-builder-tools.webp" 
+                  alt="Builder Tools Automation Mockup" 
+                  className="final-cta-img"
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
+
       </div>
     </section>
   );
