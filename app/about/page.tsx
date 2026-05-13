@@ -27,11 +27,41 @@ export default function AboutPage() {
       
       {/* Hero Section */}
       <section className="about-hero">
-        <div className="container">
+        <div className="container about-hero-container">
+          {/* Decorative absolute stars */}
+          <div className="about-star star-left">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/star-1.svg" alt="star" />
+          </div>
+          <div className="about-star star-right">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/star-2.svg" alt="star" />
+          </div>
+
           <h1 className="about-title">About The A.I.A.A.</h1>
           <p className="about-desc">
             The AI Automation Agency was born out of a simple realisation — the incredible value that intelligent automation brings to everyday business. After creating automation systems for our own companies and the businesses we’ve worked with, the results spoke for themselves. Efficiency improved. Sales soared. Workloads shrank. That’s when we knew this wasn’t just the future — it was the now.
           </p>
+
+          {/* Side-by-side premium image cards */}
+          <div className="about-hero-images">
+            <div className="about-hero-img-col">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/hero-about-01.webp" 
+                alt="Workspace Office Monochrome" 
+                className="about-hero-image"
+              />
+            </div>
+            <div className="about-hero-img-col">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Untitled-design-7.jpg" 
+                alt="Jamie and Myles automating in office" 
+                className="about-hero-image"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
