@@ -2,6 +2,7 @@ import "./about.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
+import Team from "@/components/Team";
 import Link from "next/link";
 
 export default function AboutPage() {
@@ -94,21 +95,7 @@ export default function AboutPage() {
       />
 
       {/* Team Section */}
-      <section className="about-team">
-        <div className="container">
-          <h2 className="team-title">Our Executive Team</h2>
-          <div className="team-grid">
-            <div className="team-card">
-              <div className="team-avatar"></div>
-              <h3>Myles Robinson</h3>
-            </div>
-            <div className="team-card">
-              <div className="team-avatar"></div>
-              <h3>Jamie Robinson</h3>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Team />
 
       {/* CTA Section */}
       <section className="about-cta">
