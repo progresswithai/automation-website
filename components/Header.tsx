@@ -21,15 +21,15 @@ export default function Header() {
         </Link>
         
         <nav className="nav">
-          <Link href="#systems" className="nav-link">AI Systems</Link>
-          <Link href="#about" className="nav-link">About</Link>
-          <Link href="#advice" className="nav-link">Advice</Link>
-          <Link href="#contact" className="nav-link">Contact</Link>
+          <Link href="/ai-systems" className="nav-link">AI Systems</Link>
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="/advice" className="nav-link">Advice</Link>
+          <Link href="/contact-us" className="nav-link">Contact</Link>
           <a href="tel:03330510634" className="nav-link phone-link">0333 051 0634</a>
         </nav>
         
         <div className="header-actions">
-          <Link href="#contact" className="button button-primary header-btn">Get Automated</Link>
+          <Link href="/contact-us" className="button button-primary header-btn">Get Automated</Link>
           <div className="theme-toggle">
             <div className="toggle-track">
               <div className="toggle-thumb"></div>

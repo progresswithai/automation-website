@@ -25,25 +25,25 @@ export default function Footer() {
             <div className="footer-column">
               <h4>Product</h4>
               <ul>
-                <li><Link href="#systems">Ai Automation</Link></li>
-                <li><Link href="#systems">Systems</Link></li>
-                <li><Link href="#pricing">Packages</Link></li>
+                <li><Link href="/ai-systems">Ai Automation</Link></li>
+                <li><Link href="/ai-systems">Systems</Link></li>
+                <li><Link href="/#pricing">Packages</Link></li>
               </ul>
             </div>
             <div className="footer-column">
               <h4>Company</h4>
               <ul>
-                <li><Link href="#about">About us</Link></li>
-                <li><Link href="#contact">Contact</Link></li>
+                <li><Link href="/about">About us</Link></li>
+                <li><Link href="/contact-us">Contact</Link></li>
                 <li><a href="tel:03330510634">0333 051 0634</a></li>
               </ul>
             </div>
             <div className="footer-column">
               <h4>Resources</h4>
               <ul>
-                <li><Link href="#advice">Blog</Link></li>
-                <li><Link href="#advice">Help center</Link></li>
-                <li><Link href="#contact">Support</Link></li>
+                <li><Link href="/advice">Blog</Link></li>
+                <li><Link href="/advice">Help center</Link></li>
+                <li><Link href="/contact-us">Support</Link></li>
               </ul>
             </div>
           </div>
