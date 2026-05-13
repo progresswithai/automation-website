@@ -2,6 +2,39 @@ import "./Features.css";
 import Link from "next/link";
 
 export default function Features() {
+  const row1 = [
+    { label: "Analytics", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/section.svg" },
+    { label: "Forecasting", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/column.svg" },
+    { label: "Sales", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/div.svg" },
+    { label: "HR", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/heading.svg" },
+    { label: "Prediction", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/form.svg" },
+    { label: "Marketing", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/button.svg" },
+    { label: "CRM", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/divider.svg" },
+    { label: "Workflow", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/spacer.svg" }
+  ];
+
+  const row2 = [
+    { label: "Divider", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/divider.svg" },
+    { label: "Spacer", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/spacer.svg" },
+    { label: "Personalisation", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/image.svg" },
+    { label: "Video", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/video.svg" },
+    { label: "Navigation", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/map.svg" },
+    { label: "Analytics", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/charts.svg" },
+    { label: "Content", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/blog.svg" },
+    { label: "Portfolio", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/portfolio.svg" }
+  ];
+
+  const row3 = [
+    { label: "Video", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/video.svg" },
+    { label: "Insights", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/map.svg" },
+    { label: "Charts", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/charts.svg" },
+    { label: "Blog Posts", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/blog.svg" },
+    { label: "Portfolio", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/portfolio.svg" },
+    { label: "Ecommerce", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/ecommerce.svg" },
+    { label: "Text Content", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/content.svg" },
+    { label: "Popups", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/homepage.svg" }
+  ];
+
   return (
     <section id="features" className="features-section">
       <div className="container">
@@ -290,10 +323,64 @@ export default function Features() {
           </div>
         </div>
 
+        {/* 100+ Uses For AI Systems Section */}
+        <div className="uses-section animate-fade-in">
+          <h2 className="uses-title">100+ Uses For Ai Systems in Your Business!</h2>
+          
+          <div className="marquee-wrapper">
+            {/* Row 1 (Scroll Left) */}
+            <div className="marquee-container">
+              <div className="marquee-track marquee-track-left">
+                {[...row1, ...row1, ...row1, ...row1].map((item, idx) => (
+                  <div key={`r1-${idx}`} className="use-pill">
+                    <img src={item.icon} alt={item.label} className="use-icon" />
+                    <span className="use-label">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Row 2 (Scroll Right) */}
+            <div className="marquee-container">
+              <div className="marquee-track marquee-track-right">
+                {[...row2, ...row2, ...row2, ...row2].map((item, idx) => (
+                  <div key={`r2-${idx}`} className="use-pill">
+                    <img src={item.icon} alt={item.label} className="use-icon" />
+                    <span className="use-label">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Row 3 (Scroll Left) */}
+            <div className="marquee-container">
+              <div className="marquee-track marquee-track-left">
+                {[...row3, ...row3, ...row3, ...row3].map((item, idx) => (
+                  <div key={`r3-${idx}`} className="use-pill">
+                    <img src={item.icon} alt={item.label} className="use-icon" />
+                    <span className="use-label">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Learn More Action Button */}
+          <div className="uses-action-wrapper">
+            <Link href="/contact-us" className="button button-primary uses-btn">
+              Learn More
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
+                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Link>
+          </div>
+        </div>
+
       </div>
     </section>
   );
 }
+
 
 
 

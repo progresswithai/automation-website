@@ -1,155 +1,320 @@
 .pricing-section {
-  background: linear-gradient(180deg, var(--background-dark) 0%, #0a2119 100%);
-  color: #fff;
-  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-dark);
+  background: radial-gradient(circle at 50% 120%, #0d2820 0%, #070908 75%);
+  color: #ffffff;
+  padding: 8rem 1.5rem;
 }
 
-.pricing-header {
-  text-align: center;
-  margin-bottom: 4rem;
+.pricing-bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(7, 9, 8, 0.8) 0%, transparent 40%, rgba(7, 9, 8, 0.8) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
-.pricing-title {
-  font-size: 3rem;
+.pricing-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Badge Styles */
+.pricing-badge-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+.pricing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
   font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.pricing-badge-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+/* Title container styles */
+.pricing-title-container {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pricing-section-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
   margin-bottom: 1rem;
+  line-height: 1.15;
 }
 
-.pricing-subtitle {
-  font-size: 1.25rem;
-  color: #a1a1aa;
+.pricing-flexible-highlight {
+  display: inline-flex;
+  padding: 0.1rem 0.9rem;
+  background-color: var(--highlight);
+  color: #070908;
+  transform: rotate(-2deg);
+  border-radius: 0.5rem;
+  font-weight: 800;
+  margin: 0 0.4rem;
 }
 
+.pricing-section-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Grid layout */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  align-items: center;
+  gap: 2.25rem;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.pricing-card {
-  background-color: #fff;
-  color: #111;
+/* Card layout */
+.tier-card {
+  background-color: #ffffff;
+  border-radius: 2rem;
   padding: 3rem 2.5rem;
-  border-radius: var(--radius-xl);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  transition: transform 0.3s ease;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.pricing-card:hover {
-  transform: translateY(-5px);
+.tier-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.25);
 }
 
-.pricing-card.popular {
-  border: 4px solid var(--primary);
-  padding: 4rem 2.5rem;
+.popular-card {
+  border: 2px solid var(--primary);
+  transform: scale(1.02);
 }
 
-.pricing-card.popular .button-outline {
-  border-color: var(--primary);
-  color: var(--primary);
+.popular-card:hover {
+  transform: translateY(-8px) scale(1.02);
 }
 
-.pricing-card .button-outline {
-  border-color: #e5e7eb;
-  color: #111;
-}
-
-.pricing-card .button-outline:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-
-.popular-badge {
+.popular-ribbon {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--primary);
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: var(--radius-pill);
-  font-size: 0.875rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.pricing-card-header {
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 2rem;
-}
-
-.pricing-tier {
-  font-size: 1.125rem;
-  font-weight: 700;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: #e6f6f2;
   color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
   letter-spacing: 0.05em;
 }
 
-.pricing-price {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin: 1rem 0;
-  color: #111;
-  letter-spacing: -0.05em;
-}
-
-.pricing-desc {
-  color: #6b7280;
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-
-.pricing-features {
-  list-style: none;
-  margin-bottom: 2.5rem;
-  flex-grow: 1;
-}
-
-.pricing-features li {
-  padding: 0.75rem 0;
-  color: #374151;
+/* Header contents */
+.tier-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tier-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: capitalize;
+  margin: 0 0 1rem 0;
+}
+
+.tier-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.tier-price {
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.04em;
+  margin: 0;
+  line-height: 1;
+}
+
+.tier-period {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.tier-desc {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0 0 1.75rem 0;
+  max-width: 250px;
+  min-height: 48px;
+}
+
+.tier-desc strong {
+  color: #111111;
+  font-weight: 700;
+}
+
+/* Button themes */
+.tier-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.btn-peach {
+  background-color: #f5e9e2;
+  color: var(--primary);
+}
+
+.btn-peach:hover {
+  background-color: #ebdcd3;
+}
+
+.btn-emerald {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.btn-emerald:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 10px 25px rgba(27, 122, 99, 0.25);
+}
+
+.tier-guarantee {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Card Features list */
+.tier-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 2rem;
+  margin-top: auto;
+}
+
+.tier-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  text-align: left;
+}
+
+.tier-features-list li {
+  display: flex;
+  align-items: flex-start;
   gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.tier-check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: #e6f6f2;
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Tax note */
+.pricing-tax-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 4.5rem;
   font-weight: 500;
 }
 
-.pricing-features li::before {
-  content: "✓";
-  color: #22c55e;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.pricing-btn {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.pricing-guarantee {
-  text-align: center;
-  font-size: 0.875rem;
-  color: #9ca3af;
-}
-
-.pricing-tax-note {
-  text-align: center;
-  color: rgba(255,255,255,0.5);
-  margin-top: 3rem;
-  font-size: 0.875rem;
+/* Responsive Overrides */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    gap: 1.5rem;
+  }
+  .tier-card {
+    padding: 2.5rem 2rem;
+  }
 }
 
 @media (max-width: 992px) {
+  .pricing-section {
+    padding: 6rem 1.5rem;
+  }
   .pricing-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+    max-width: 480px;
   }
-  .pricing-card.popular {
-    padding: 3rem 2.5rem;
+  .popular-card {
+    transform: none;
+  }
+  .popular-card:hover {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-section {
+    padding: 5rem 1rem;
+  }
+  .pricing-title-container {
+    margin-bottom: 3.5rem;
+  }
+  .tier-card {
+    padding: 2.25rem 1.75rem;
   }
 }
