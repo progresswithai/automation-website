@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingControls from "@/components/FloatingControls";
 
 export const metadata: Metadata = {
   title: "The AI Automation Agency",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <FloatingControls />
+      </body>
     </html>
   );
 }

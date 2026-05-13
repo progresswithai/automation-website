@@ -1,0 +1,82 @@
+.floating-controls-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+/* Base Floating Button styling */
+.floating-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: none;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Light Grey Dark-mode Toggle Button (matches screenshot) */
+.theme-toggle-btn {
+  background-color: #e5e5e5;
+  color: #111111;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.theme-toggle-btn:hover {
+  background-color: #d4d4d4;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Solid Brand-Green Scroll-to-Top Button (matches screenshot) */
+.scroll-top-btn {
+  background-color: var(--primary);
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(15px);
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(27, 122, 99, 0.3);
+}
+
+/* Dark Mode Overrides for floating components */
+.dark .theme-toggle-btn {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+
+.dark .theme-toggle-btn:hover {
+  background-color: #334155;
+}
+
+/* Responsiveness on small viewports */
+@media (max-width: 768px) {
+  .floating-controls-wrapper {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    gap: 0.75rem;
+  }
+  .floating-btn {
+    width: 46px;
+    height: 46px;
+  }
+}

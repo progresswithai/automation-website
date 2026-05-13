@@ -26,6 +26,51 @@
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Dark Mode Overrides */
+.dark {
+  --background: #0d0f0e;
+  --background-soft: #141716;
+  --foreground: #ffffff;
+  --header-bg: rgba(13, 15, 14, 0.96);
+  --header-text: #ffffff;
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark body {
+  background-color: #0d0f0e;
+  color: #ffffff;
+}
+
+.dark .header {
+  background-color: rgba(13, 15, 14, 0.96) !important;
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.dark .nav-link {
+  color: #e2e8f0 !important;
+}
+
+.dark .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.dark .mobile-nav-bar {
+  background-color: #0d0f0e !important;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark .mobile-nav-link {
+  color: #f1f5f9 !important;
+}
+
+.dark .mobile-nav-close-btn {
+  color: #f1f5f9 !important;
+}
+
+.dark .mobile-nav-link:hover {
+  color: var(--primary) !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -40,6 +85,7 @@ html, body {
   font-family: var(--font-sans);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
