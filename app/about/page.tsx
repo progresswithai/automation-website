@@ -65,26 +65,56 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Brand Logos Row */}
+      <section className="about-brands-section">
+        <div className="container">
+          <div className="about-brands-track">
+            <div className="about-brands-slider">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Hubspot.png" alt="HubSpot" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zoho.png" alt="Zoho" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zapier.png" alt="Zapier" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/salesforce.png" alt="Salesforce" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/monday.png" alt="Monday.com" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/pipedrive.png" alt="Pipedrive" className="about-brand-logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Evolution Section */}
       <section className="about-evolution">
         <div className="container evolution-container">
-          <div className="evolution-content">
-            <h2>How We Evolved</h2>
-            <p>Our roots began in search engine optimisation, helping businesses grow online visibility and attract high-quality leads. But as digital landscapes evolved, so did we. SEO naturally led us deeper into automation — from CRM optimisation and reporting dashboards to AI-driven content workflows — creating smarter, faster, and more streamlined operations for the businesses we support.</p>
-            <p>Today, we help companies increase productivity and revenue with fewer manual hours. Our clients experience smoother workflows, real-time insights through automated reporting, and happier teams who finally have time to focus on meaningful work. The result? Improved efficiency, better decision-making, and an elevated customer experience that keeps people coming back.</p>
+          <h2 className="evolution-title">How We Evolved</h2>
+          
+          <div className="evolution-desc-container">
+            <p className="evolution-desc">
+              Our roots began in search engine optimisation, helping businesses grow online visibility and attract high-quality leads. But as digital landscapes evolved, so did we. SEO naturally led us deeper into automation — from CRM optimisation and reporting dashboards to AI-driven content workflows — creating smarter, faster, and more streamlined operations for the businesses we support.
+            </p>
+            <p className="evolution-desc">
+              Today, we help companies increase productivity and revenue with fewer manual hours. Our clients experience smoother workflows, real-time insights through automated reporting, and happier teams who finally have time to focus on meaningful work. The result? Improved efficiency, better decision-making, and an elevated customer experience that keeps people coming back.
+            </p>
           </div>
-          <div className="evolution-stats">
-            <div className="stat-card highlight">
-              <h3>2019</h3>
-              <p>Automation started</p>
+
+          <div className="evolution-stats-row">
+            <div className="evolution-stat-col">
+              <span className="evolution-stat-number">2023</span>
+              <p className="evolution-stat-label">Automation started</p>
             </div>
-            <div className="stat-card">
-              <h3>150+</h3>
-              <p>Companies</p>
+            
+            <div className="evolution-stat-col">
+              <span className="evolution-stat-number">35</span>
+              <p className="evolution-stat-label">Companies</p>
             </div>
-            <div className="stat-card">
-              <h3>450+</h3>
-              <p>Automations Completed</p>
+            
+            <div className="evolution-stat-col">
+              <span className="evolution-stat-number">100k</span>
+              <p className="evolution-stat-label">Automations Completed</p>
             </div>
           </div>
         </div>
@@ -93,36 +123,84 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="about-values">
         <div className="container">
-          <h2 className="values-title">Our Values it's Simple!</h2>
+          <h2 className="values-title">Our Values it’s Simple!</h2>
           <div className="values-grid">
+            
+            {/* Value Card 1 */}
             <div className="value-card">
-              <div className="value-icon">🔍</div>
-              <h3>Discovery and Analysis</h3>
-              <p>We start by understanding your business goals, processes, and challenges to identify where automation can deliver the greatest impact.</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/lighbulb-1.png" alt="Lightbulb" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/icon-diamond-dark.svg" alt="Diamond Dark" />
+              <h3 className="value-heading">Discovery and Analysis</h3>
+              <p className="value-desc">We start by understanding your business goals, processes, and challenges to identify where automation can deliver the greatest impact.</p>
             </div>
+
+            {/* Value Card 2 */}
             <div className="value-card">
-              <div className="value-icon">📋</div>
-              <h3>Strategy and Planning</h3>
-              <p>A tailored roadmap is created, outlining automation opportunities, integration points, and measurable outcomes for your business.</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/ai-brain-1.png" alt="AI Brain" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/icon-trophy-dark.svg" alt="Trophy Dark" />
+              <h3 className="value-heading">Strategy and Planning</h3>
+              <p className="value-desc">A tailored roadmap is created, outlining automation opportunities, integration points, and measurable outcomes for your business.</p>
             </div>
+
+            {/* Value Card 3 */}
             <div className="value-card">
-              <div className="value-icon">⚙️</div>
-              <h3>Implementation and Optimisation</h3>
-              <p>We design, build, and deploy automation systems, ensuring seamless integration and maximum efficiency across your operations.</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/cog-1.png" alt="Cog" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/icon-globe-dark.svg" alt="Globe Dark" />
+              <h3 className="value-heading">Implementation and Optimisation</h3>
+              <p className="value-desc">We design, build, and deploy automation systems, ensuring seamless integration and maximum efficiency across your operations.</p>
             </div>
+
+            {/* Value Card 4 */}
             <div className="value-card">
-              <div className="value-icon">📈</div>
-              <h3>Monitoring and Growth</h3>
-              <p>After launch, we can continuously track performance, refine workflows, and scale your automation systems as your business evolves.</p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/success-1.png" alt="Success" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img decoding="async" className="value-img hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/icon-crown-dark.svg" alt="Crown Dark" />
+              <h3 className="value-heading">Monitoring and Growth</h3>
+              <p className="value-desc">After launch, we can continuously track performance, refine workflows, and scale your automation systems as your business evolves.</p>
             </div>
+
           </div>
         </div>
       </section>
 
-      <Testimonials 
-        customTestimonials={aboutTestimonials}
-        customTitle={<h2 className="testimonials-title">Some clients feedbacks</h2>}
-      />
+      {/* Client Feedbacks Section */}
+      <section className="about-feedbacks">
+        <div className="container">
+          <h2 className="feedbacks-title">Some clients feedbacks</h2>
+          <div className="feedbacks-grid">
+            
+            {aboutTestimonials.map((item, idx) => (
+              <div key={idx} className="feedback-grid-card">
+                <div className="feedback-card-top">
+                  <div className="feedback-stars-wrap">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img decoding="async" className="feedback-stars block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/5-stars-orange.png" alt="5 Stars" />
+                    {/* Dark mode stars if needed - currently empty src in user HTML, so we just hide the light one */}
+                  </div>
+                  <p className="feedback-text">{item.text}</p>
+                </div>
+                <div className="feedback-card-bottom">
+                  <h6 className="feedback-author">{item.author}</h6>
+                </div>
+              </div>
+            ))}
+            
+          </div>
+          <div className="feedbacks-actions">
+            <a href="#" target="_blank" rel="nofollow" className="feedbacks-link">
+              <span>See all feedbacks</span>
+              <i className="icon unicon-arrow-right">→</i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* Team Section */}
       <Team />
