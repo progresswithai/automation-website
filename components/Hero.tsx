@@ -6,6 +6,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-background">
         <div className="glow glow-1"></div>
+        <div className="glow glow-2"></div>
       </div>
       <div className="container hero-content animate-fade-in">
         <div className="hero-badge">
@@ -21,6 +22,12 @@ export default function Hero() {
           <span className="title-line title-white">In just 90 Days</span>
         </h1>
         
+        <div className="hero-actions">
+          <Link href="#contact" className="button button-primary hero-btn">
+            Book a Call
+          </Link>
+          <div className="hero-guarantee">Money back guarantee*</div>
+        </div>
       </div>
     </section>
   );

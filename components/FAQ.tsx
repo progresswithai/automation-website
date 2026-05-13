@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import "./FAQ.css";
+import Link from "next/link";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: "What exactly does Antigravity offer?",
+      question: "What exactly does The AI Automation Agency offer?",
       answer: "We provide expert advisory services to help you identify the best automation opportunities, recommend the right AI tools and systems, and assist your team or vendors through the implementation process. We don't directly implement systems ourselves but guide you at every step to ensure successful adoption."
     },
     {
@@ -38,17 +39,17 @@ export default function FAQ() {
   };
 
   return (
-    <section id="advice" className="section faq">
+    <section id="advice" className="faq-section">
       <div className="container faq-container">
         <div className="faq-header animate-fade-in">
           <h2 className="faq-title">Frequently Asked Questions</h2>
           <p className="faq-subtitle">These FAQs are based on the real, pressing questions our clients asked and our answers to for complete clarity!</p>
-          <a href="#contact" className="faq-link">Still have a question?</a>
+          <Link href="#contact" className="faq-link">Still have a question?</Link>
         </div>
         
         <div className="faq-list animate-fade-in delay-100">
           {faqs.map((faq, index) => (
-            <div key={index} className={`faq-item glass ${openIndex === index ? 'open' : ''}`}>
+            <div key={index} className={`faq-item ${openIndex === index ? 'open' : ''}`}>
               <button 
                 className="faq-question" 
                 onClick={() => toggleFaq(index)}

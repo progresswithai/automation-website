@@ -21,18 +21,23 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="section testimonials">
+    <section className="testimonials-section">
       <div className="container">
-        <h2 className="testimonials-title animate-fade-in">What Our Clients Say</h2>
+        <h2 className="testimonials-title animate-fade-in">
+          Don't just take our <span className="title-highlight-wrapper"><span className="title-highlight">words.</span></span>
+        </h2>
         <div className="testimonials-grid">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial-card glass animate-fade-in" style={{animationDelay: `${index * 100}ms`}}>
-              <div className="quote-icon">"</div>
+            <div key={index} className="testimonial-card animate-fade-in" style={{animationDelay: `${index * 100}ms`}}>
+              <div className="stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
               <p className="testimonial-text">{testimonial.text}</p>
               <div className="testimonial-author">
                 <div className="author-avatar"></div>
                 <div className="author-info">
                   <h6>{testimonial.author}</h6>
+                  <span className="author-verified">Verified Client</span>
                 </div>
               </div>
             </div>

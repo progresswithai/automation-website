@@ -3,26 +3,29 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="footer">
+    <footer id="contact" className="footer-section">
       <div className="container">
-        <div className="footer-cta animate-fade-in">
-          <h2 className="cta-title">Speak to us today to get started</h2>
-          <Link href="mailto:contact@antigravity.ai" className="button button-primary button-large cta-btn">
-            Get started
-          </Link>
-        </div>
-
-        <div className="footer-content">
+        
+        <div className="footer-top animate-fade-in">
           <div className="footer-brand">
-            <h3 className="footer-logo">The AI Automation Agency</h3>
+            <div className="footer-logo">
+              <div className="footer-logo-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L3 7L3 17L12 22L21 17L21 7L12 2Z" fill="#1b7a63"/>
+                  <path d="M12 22V12M12 12L3 7M12 12L21 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="12" cy="12" r="3" fill="white"/>
+                </svg>
+              </div>
+              <h3>The AI<br/>Automation<br/>Agency</h3>
+            </div>
             <p className="footer-desc">A Leading AI Automation Agency focussing on bespoke AI for businesses of all sizes.</p>
           </div>
 
-          <div className="footer-links-grid">
+          <div className="footer-links-container">
             <div className="footer-column">
               <h4>Product</h4>
               <ul>
-                <li><Link href="#systems">AI Automation</Link></li>
+                <li><Link href="#systems">Ai Automation</Link></li>
                 <li><Link href="#systems">Systems</Link></li>
                 <li><Link href="#pricing">Packages</Link></li>
               </ul>
@@ -47,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} The AI Automation Agency. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AI Automation Agency, All rights reserved.</p>
         </div>
       </div>
     </footer>

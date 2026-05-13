@@ -1,8 +1,9 @@
 import "./Pricing.css";
+import Link from "next/link";
 
 export default function Pricing() {
   return (
-    <section className="section pricing">
+    <section id="pricing" className="pricing-section">
       <div className="container">
         <div className="pricing-header animate-fade-in">
           <h2 className="pricing-title">Simple flexible pricing.</h2>
@@ -10,7 +11,8 @@ export default function Pricing() {
         </div>
 
         <div className="pricing-grid">
-          <div className="pricing-card glass animate-fade-in">
+          {/* Card 1 */}
+          <div className="pricing-card animate-fade-in">
             <div className="pricing-card-header">
               <span className="pricing-tier">90 day fast-track</span>
               <div className="pricing-price">£call</div>
@@ -24,11 +26,12 @@ export default function Pricing() {
               <li>Quick wins in month 1</li>
               <li>ROI guaranteed</li>
             </ul>
-            <a href="#contact" className="button button-outline pricing-btn">Book a Call &gt;</a>
+            <Link href="#contact" className="button button-outline pricing-btn">Book a Call &gt;</Link>
             <div className="pricing-guarantee">Money back guarantee*</div>
           </div>
 
-          <div className="pricing-card glass popular animate-fade-in delay-100">
+          {/* Card 2 */}
+          <div className="pricing-card popular animate-fade-in delay-100">
             <div className="popular-badge">Most Popular</div>
             <div className="pricing-card-header">
               <span className="pricing-tier">Retainer</span>
@@ -43,11 +46,12 @@ export default function Pricing() {
               <li>Grows with your business</li>
               <li>Massive ROI long term</li>
             </ul>
-            <a href="#contact" className="button button-primary pricing-btn">Book a Call &gt;</a>
+            <Link href="#contact" className="button button-primary pricing-btn">Book a Call &gt;</Link>
             <div className="pricing-guarantee">Hands off for you. Hands on for us</div>
           </div>
 
-          <div className="pricing-card glass animate-fade-in delay-200">
+          {/* Card 3 */}
+          <div className="pricing-card animate-fade-in delay-200">
             <div className="pricing-card-header">
               <span className="pricing-tier">Support</span>
               <div className="pricing-price">£87</div>
@@ -61,7 +65,7 @@ export default function Pricing() {
               <li>Pick our brains</li>
               <li>Help with integration</li>
             </ul>
-            <a href="#contact" className="button button-outline pricing-btn">Get started &gt;</a>
+            <Link href="#contact" className="button button-outline pricing-btn">Get started &gt;</Link>
             <div className="pricing-guarantee">Billed monthly</div>
           </div>
         </div>
