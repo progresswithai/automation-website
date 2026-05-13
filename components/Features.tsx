@@ -118,9 +118,73 @@ export default function Features() {
 
         </div>
 
+        {/* Leading AI Companies Section */}
+        <div className="companies-section animate-fade-in">
+          <h2 className="companies-title">Leading AI Companies We Work With</h2>
+          <div className="companies-grid">
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Hubspot.png" 
+                alt="HubSpot" 
+                className="company-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/salesforce.png" 
+                alt="Salesforce" 
+                className="company-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zapier.png" 
+                alt="Zapier" 
+                className="company-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zoho.png" 
+                alt="Zoho" 
+                className="company-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/monday.png" 
+                alt="monday.com" 
+                className="company-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/UI-path.png" 
+                alt="UiPath" 
+                className="company-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/make.png" 
+                alt="Make" 
+                className="company-logo text-logo" 
+              />
+            </div>
+            <div className="company-logo-wrapper">
+              <img 
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/pipedrive.png" 
+                alt="Pipedrive" 
+                className="company-logo" 
+              />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
 }
+
 
 
