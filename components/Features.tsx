@@ -38,7 +38,7 @@ export default function Features() {
   return (
     <section id="features" className="features-section">
       <div className="container">
-        
+
         {/* Main Section Header */}
         <div className="features-section-header animate-fade-in">
           <div className="features-badge">
@@ -55,7 +55,7 @@ export default function Features() {
 
         {/* 2x2 Grid of High-Fidelity Feature Cards */}
         <div className="features-grid-container">
-          
+
           {/* Card 1: Top Left - Market Access */}
           <div className="features-grid-card card-market-access animate-fade-in">
             <div className="card-top-content">
@@ -66,15 +66,15 @@ export default function Features() {
                 <Link href="/contact-us" className="button button-primary features-btn btn-dark-emerald">
                   Book a Call
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
-                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
               </div>
             </div>
             <div className="card-bottom-image">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Screenshot-2025-10-28-at-13.53.15.png" 
-                alt="Ops and Automation flow" 
+              <img
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Screenshot-2025-10-28-at-13.53.15.png"
+                alt="Ops and Automation flow"
                 className="card-screenshot rounded-top"
               />
             </div>
@@ -83,9 +83,9 @@ export default function Features() {
           {/* Card 2: Top Right - Systems & Results */}
           <div className="features-grid-card card-systems-results animate-fade-in">
             <div className="card-top-image-center">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zapier_circle_transparent.png" 
-                alt="Zapier Circle Diagram" 
+              <img
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zapier_circle_transparent.png"
+                alt="Zapier Circle Diagram"
                 className="card-diagram"
               />
             </div>
@@ -100,7 +100,7 @@ export default function Features() {
                 <Link href="/contact-us" className="button button-light features-btn btn-white-pill">
                   Book a Call
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
-                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
               </div>
@@ -110,9 +110,9 @@ export default function Features() {
           {/* Card 3: Bottom Left - AI Trap Protection */}
           <div className="features-grid-card card-ai-trap animate-fade-in">
             <div className="card-top-image-full">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/AI-automation-agency-image-scaled.jpg" 
-                alt="AI Trap protection" 
+              <img
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/AI-automation-agency-image-scaled.jpg"
+                alt="AI Trap protection"
                 className="card-full-bleed-image"
               />
             </div>
@@ -122,7 +122,7 @@ export default function Features() {
                 <Link href="/contact-us" className="button button-outline features-btn btn-trap-out">
                   Let's find out
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
-                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </Link>
               </div>
@@ -141,9 +141,9 @@ export default function Features() {
               </p>
             </div>
             <div className="card-bottom-image">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Screenshot-2025-10-28-at-13.56.33.jpg" 
-                alt="Hands off workflows automation" 
+              <img
+                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Screenshot-2025-10-28-at-13.56.33.jpg"
+                alt="Hands off workflows automation"
                 className="card-screenshot rounded-top"
               />
             </div>
@@ -156,59 +156,59 @@ export default function Features() {
           <h2 className="companies-title">Leading AI Companies We Work With</h2>
           <div className="companies-grid">
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Hubspot.png" 
-                alt="HubSpot" 
-                className="company-logo" 
+              <img
+                src="/assets/images/Hubspot.png"
+                alt="HubSpot"
+                className="company-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/salesforce.png" 
-                alt="Salesforce" 
-                className="company-logo" 
+              <img
+                src="/assets/images/salesforce.png"
+                alt="Salesforce"
+                className="company-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zapier.png" 
-                alt="Zapier" 
-                className="company-logo" 
+              <img
+                src="/assets/images/zapier.png"
+                alt="Zapier"
+                className="company-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zoho.png" 
-                alt="Zoho" 
-                className="company-logo" 
+              <img
+                src="/assets/images/zoho.png"
+                alt="Zoho"
+                className="company-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/monday.png" 
-                alt="monday.com" 
-                className="company-logo" 
+              <img
+                src="/assets/images/monay.png"
+                alt="monday.com"
+                className="company-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/UI-path.png" 
-                alt="UiPath" 
-                className="company-logo" 
+              <img
+                src="/assets/images/make.png"
+                alt="Make"
+                className="company-logo text-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/make.png" 
-                alt="Make" 
-                className="company-logo text-logo" 
+              <img
+                src="/assets/images/uipath.png"
+                alt="UiPath"
+                className="company-logo"
               />
             </div>
             <div className="company-logo-wrapper">
-              <img 
-                src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/pipedrive.png" 
-                alt="Pipedrive" 
-                className="company-logo" 
+              <img
+                src="/assets/images/pipedrive.png"
+                alt="Pipedrive"
+                className="company-logo"
               />
             </div>
           </div>
@@ -230,10 +230,10 @@ export default function Features() {
             {/* Card 1 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/zap.svg" 
-                  alt="CRM Automation" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/zap.svg"
+                  alt="CRM Automation"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">CRM Automation</h3>
@@ -242,10 +242,10 @@ export default function Features() {
             {/* Card 2 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/database.svg" 
-                  alt="Financial Automation" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/database.svg"
+                  alt="Financial Automation"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">Financial Automation</h3>
@@ -254,10 +254,10 @@ export default function Features() {
             {/* Card 3 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/puzzle.svg" 
-                  alt="Workflow Automation" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/puzzle.svg"
+                  alt="Workflow Automation"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">Workflow Automation</h3>
@@ -266,10 +266,10 @@ export default function Features() {
             {/* Card 4 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/target.svg" 
-                  alt="Marketing Automation" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/target.svg"
+                  alt="Marketing Automation"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">Marketing Automation</h3>
@@ -278,10 +278,10 @@ export default function Features() {
             {/* Card 5 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/line-chart.svg" 
-                  alt="Chatbots" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/line-chart.svg"
+                  alt="Chatbots"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">Chatbots</h3>
@@ -290,10 +290,10 @@ export default function Features() {
             {/* Card 6 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/settings.svg" 
-                  alt="Business Process Automation" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/settings.svg"
+                  alt="Business Process Automation"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">Business Process Automation</h3>
@@ -302,10 +302,10 @@ export default function Features() {
             {/* Card 7 */}
             <div className="system-card">
               <div className="system-icon-box">
-                <img 
-                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/database.svg" 
-                  alt="HR Automation" 
-                  className="system-icon" 
+                <img
+                  src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/database.svg"
+                  alt="HR Automation"
+                  className="system-icon"
                 />
               </div>
               <h3 className="system-card-title">HR Automation</h3>
@@ -315,7 +315,7 @@ export default function Features() {
             <div className="system-card-more">
               <Link href="/contact-us" className="system-more-btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </Link>
               <span className="system-more-text">View all features</span>
@@ -326,7 +326,7 @@ export default function Features() {
         {/* 100+ Uses For AI Systems Section */}
         <div className="uses-section animate-fade-in">
           <h2 className="uses-title">100+ Uses For Ai Systems in Your Business!</h2>
-          
+
           <div className="marquee-wrapper">
             {/* Row 1 (Scroll Left) */}
             <div className="marquee-container">
@@ -370,7 +370,7 @@ export default function Features() {
             <Link href="/contact-us" className="button button-primary uses-btn">
               Learn More
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="btn-arrow">
-                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
           </div>

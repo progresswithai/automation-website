@@ -82,6 +82,10 @@ export default function AboutPage() {
               <img src="/assets/images/monay.png" alt="Monday.com" className="about-brand-logo" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/assets/images/make.png" alt="Make" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/images/uipath.png" alt="UiPath" className="about-brand-logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/images/pipedrive.png" alt="Pipedrive" className="about-brand-logo" />
             </div>
           </div>
         </div>
