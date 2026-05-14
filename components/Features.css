@@ -741,4 +741,33 @@
   }
 }
 
+/* Dark Mode Overrides for Features Section */
+.dark .card-market-access,
+.dark .card-hands-off {
+  color: #ffffff;
+}
+
+.dark .card-market-access .block-body-text,
+.dark .card-hands-off .block-body-text {
+  color: #e2e8f0;
+}
+
+.dark .text-dark-muted {
+  color: #cbd5e1;
+}
+
+.dark .block-title.text-dark {
+  color: #ffffff;
+}
+
+.dark .companies-title {
+  color: #ffffff;
+}
+
+.dark .company-logo-wrapper {
+  background-color: #ffffff;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+}
+
 

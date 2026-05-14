@@ -26,7 +26,7 @@ export default function Header() {
                 className="logo-image" 
                 height={38} 
                 width={150}
-                style={{ width: "auto", height: "38px", objectFit: "contain" }} 
+                style={{ width: "auto", height: "auto", maxHeight: "38px", objectFit: "contain" }} 
                 priority 
               />
             </Link>
@@ -82,7 +82,8 @@ export default function Header() {
                 className="logo-image" 
                 height={34} 
                 width={130}
-                style={{ width: "auto", height: "34px", objectFit: "contain" }} 
+                style={{ width: "auto", height: "auto", maxHeight: "34px", objectFit: "contain" }} 
+                priority
               />
             </Link>
             <button className="mobile-nav-close-btn" onClick={toggleMobileMenu} aria-label="Close Mobile Menu">

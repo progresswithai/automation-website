@@ -156,3 +156,37 @@ button {
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
+
+/* ============================================
+   DARK MODE — Global Utility Overrides
+   ============================================ */
+
+/* button-light becomes a dark surface in dark mode */
+.dark .button-light {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.dark .button-light:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Warm beige card backgrounds become subtle dark surface */
+.dark .blog-card,
+.dark .newsletter-container {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Advice page title */
+.dark .advice-title {
+  color: #ffffff;
+}
+
+/* AI Systems page text contrast fixes */
+.dark .ai-systems-section,
+.dark [class*="ai-systems"] h1,
+.dark [class*="ai-systems"] h2,
+.dark [class*="ai-systems"] h3 {
+  color: #ffffff;
+}

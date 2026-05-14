@@ -9,10 +9,10 @@ interface TeamProps {
 export default function Team({ title, subtitle }: TeamProps) {
   const members = [
     {
-      name: "Myles Robinson",
+      name: "Pranay Pise",
       role: "Founder & Strategist",
-      image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg",
-      linkedin: "#",
+      image: "/assets/images/founder.png",
+      linkedin: "https://www.linkedin.com/in/pranaypise/",
       facebook: "#",
       x: "#"
     },

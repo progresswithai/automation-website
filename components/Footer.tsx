@@ -19,7 +19,7 @@ export default function Footer() {
                 className="footer-logo-img"
                 height={134}
                 width={134}
-                style={{ width: "auto", height: "134px", objectFit: "contain", marginBottom: "1rem", color: "transparent" }}
+                style={{ width: "auto", height: "auto", maxHeight: "134px", objectFit: "contain", marginBottom: "1rem", color: "transparent" }}
               />
             </Link>
             <p className="footer-brand-tagline">

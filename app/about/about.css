@@ -673,3 +673,149 @@
     font-size: 2.5rem;
   }
 }
+
+/* ============================================
+   DARK MODE OVERRIDES — About Page
+   ============================================ */
+
+/* Hero text */
+.dark .about-title,
+.dark .about-hero h1 {
+  color: #ffffff;
+}
+
+.dark .about-subtitle,
+.dark .about-hero p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Stats & secondary text */
+.dark .about-stat-value,
+.dark .stat-number {
+  color: #ffffff;
+}
+
+.dark .about-stat-label,
+.dark .stat-label {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Brand section */
+.dark .about-brands-section {
+  background-color: var(--background);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .about-brands-slider img {
+  background-color: #ffffff;
+  border-radius: var(--radius-sm);
+  padding: 0.4rem;
+}
+
+/* Values section */
+.dark .values-section,
+.dark .about-values-section {
+  background-color: var(--background);
+}
+
+.dark .value-card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .value-title {
+  color: #ffffff;
+}
+
+.dark .value-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Evolution / timeline section */
+.dark .evolution-section {
+  background-color: var(--background);
+}
+
+.dark .evolution-title,
+.dark .evolution-section h2 {
+  color: #ffffff;
+}
+
+.dark .evolution-desc,
+.dark .evolution-section p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .timeline-year {
+  color: var(--primary);
+}
+
+.dark .timeline-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Feedback section */
+.dark .feedbacks-section {
+  background-color: var(--background);
+}
+
+.dark .feedback-card-about {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .feedback-quote {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark .feedback-name {
+  color: #ffffff;
+}
+
+.dark .feedback-role {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Team section */
+.dark .team-section {
+  background-color: var(--background);
+}
+
+.dark .team-section h2,
+.dark .executive-team-name {
+  color: #ffffff;
+}
+
+.dark .executive-team-role {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* CTA section */
+.dark .cta-section {
+  background-color: var(--background);
+}
+
+.dark .cta-container h2 {
+  color: #ffffff;
+}
+
+.dark .cta-container p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Section headings & general body text */
+.dark .about-section-title,
+.dark .section-title {
+  color: #ffffff;
+}
+
+.dark .about-section-subtitle,
+.dark .section-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Warm beige backgrounds become dark in dark mode */
+.dark .about-warm-bg,
+.dark .evolution-section.warm-bg {
+  background-color: rgba(255, 255, 255, 0.03);
+}
