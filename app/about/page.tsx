@@ -212,7 +212,7 @@ export default function AboutPage() {
               <img 
                 decoding="async" 
                 className="executive-team-img" 
-                src="https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff" 
+                src="/assets/images/pranay.png" 
                 alt="Pranay Pise" 
               />
               <div className="executive-team-info">

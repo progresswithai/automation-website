@@ -6,9 +6,9 @@ export function AgencyIntro() {
     <section className="extra-section soft-bg">
       <div className="container">
         <div className="text-center-wrapper">
-          <h2 className="extra-title">The AI Automation Agency</h2>
+          <h2 className="extra-title">Progress With AI</h2>
           <p className="extra-desc">
-            At The AI Automation Agency we tell you exactly what to do, what systems to use, and why they work. Then, we help you put it all in place.
+            At Progress With AI we tell you exactly what to do, what systems to use, and why they work. Then, we help you put it all in place.
           </p>
           <p className="extra-desc">
             We have whole of market access which means we will propose and integrate the most cost effective AI automations. We also create custom built agents without having to pay expensive software companies for the same agents.
@@ -58,22 +58,22 @@ export function HandsOff() {
 export function LatestPosts() {
   const horizontalPosts = [
     {
-      title: "Why Choose AI Automation For Your Business Benefits",
+      title: "The Future of AI Automation in Modern Business",
       image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/Add-a-heading-960-x-640-px-768x403.jpg",
-      date: "October 23, 2025",
-      link: "https://theaiautomationagency.ai/why-choose-ai-automation-for-your-business-benefits/"
+      date: "May 10, 2026",
+      link: "/advice"
     },
     {
-      title: "AI in Business",
+      title: "Optimizing Your CRM with Intelligent Workflows",
       image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/ai-in-business-768x432.jpg",
-      date: "October 31, 2025",
-      link: "https://theaiautomationagency.ai/ai-in-business/"
+      date: "May 12, 2026",
+      link: "/advice"
     },
     {
-      title: "How AI Is Transforming UK Home Improvement Companies",
+      title: "How to Scale Your Operations Using Custom AI Agents",
       image: "https://theaiautomationagency.ai/wp-content/uploads/2025/11/ai-for-solar-and-heat-pumps-installation-768x432.png",
-      date: "November 10, 2025",
-      link: "https://theaiautomationagency.ai/how-ai-is-transforming-uk-home-improvement-companies/"
+      date: "May 14, 2026",
+      link: "/advice"
     }
   ];
 
@@ -115,19 +115,19 @@ export function LatestPosts() {
             <article className="featured-post-card">
               <div className="featured-post-content">
                 <h3 className="featured-post-title">
-                  <Link href="https://theaiautomationagency.ai/why-most-uk-companies-fail-with-ai-automation/" target="_blank">
-                    Why Most UK Companies
+                  <Link href="/advice">
+                    Maximizing ROI with Strategic AI Integration
                   </Link>
                 </h3>
                 <p className="featured-post-excerpt">
-                  Artificial intelligence (AI) is transforming the way UK companies operate, promising faster processes, lower costs, and better customer experiences. Yet despite the hype, most UK
+                  Strategic AI integration is transforming the way businesses operate, promising faster processes, lower costs, and better customer experiences. Learn how to implement AI correctly for long-term success.
                 </p>
                 
                 {/* Author Info */}
                 <div className="featured-post-author-row">
                   <div className="author-meta-details-wrap" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <img 
-                      src="https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff" 
+                      src="/assets/images/pranay.png" 
                       alt="Pranay Pise" 
                       className="author-avatar-img"
                     />

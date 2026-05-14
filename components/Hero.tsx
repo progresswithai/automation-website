@@ -48,7 +48,7 @@ export default function Hero() {
         <div className="floating-user left-user">
           <div className="avatar-wrapper">
             <img 
-              src="https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff" 
+              src="/assets/images/pranay.png" 
               alt="Team member Pranay" 
               className="user-avatar"
             />
@@ -60,21 +60,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* Floating Avatar & Cursor 2 (Right of Hero text) */}
-        <div className="floating-user right-user">
-          <div className="avatar-wrapper">
-            <img 
-              src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Jamie-Robinson-2.png" 
-              alt="Team member Jamie" 
-              className="user-avatar"
-            />
-          </div>
-          <img 
-            src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/user-cursor-1.png" 
-            alt="Jamie cursor" 
-            className="user-cursor"
-          />
-        </div>
+
       </div>
 
       {/* Main Showcase Dashboard Container */}

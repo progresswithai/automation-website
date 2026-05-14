@@ -22,7 +22,7 @@ export default function Header() {
             <Link href="/" className="logo-container">
               <Image 
                 src="/assets/images/logo.png" 
-                alt="The AI Automation Agency" 
+                alt="Progress With AI" 
                 className="logo-image" 
                 height={38} 
                 width={150}

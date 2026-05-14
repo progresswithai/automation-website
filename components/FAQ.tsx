@@ -22,7 +22,7 @@ export default function FAQ() {
     },
     {
       question: "Can you guarantee automation will increase my revenue or productivity?",
-      answer: "While results depend on various factors, we base our recommendations on proven strategies used by clients like Boiler Central and Value Doors, who have grown their revenues significantly with automation. We focus on measurable ROI and continuous optimisation."
+      answer: "While results depend on various factors, we base our recommendations on proven strategies used by our past successful integrations, where businesses have grown their revenues significantly with automation. We focus on measurable ROI and continuous optimisation."
     },
     {
       question: "What kinds of processes can be automated?",

@@ -8,42 +8,42 @@ export default function AdvicePage() {
     {
       category: "Guides",
       author: "Pranay Pise",
-      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
-      date: "October 23, 2025",
-      title: "Why Choose AI Automation For Your Business Benefits",
-      summary: "Unlock Efficiency: How AI Automation Consultants Can Transform Your UK Business In the fast-evolving digital economy,",
+      authorAvatar: "/assets/images/pranay.png",
+      date: "May 10, 2026",
+      title: "The Future of AI Automation in Modern Business",
+      summary: "Unlock Efficiency: How AI Automation can transform your business operations in the fast-evolving digital economy.",
       image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/Add-a-heading-960-x-640-px-768x403.jpg",
-      link: "https://theaiautomationagency.ai/why-choose-ai-automation-for-your-business-benefits/"
+      link: "/advice"
     },
     {
       category: "Guides",
       author: "Pranay Pise",
-      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
-      date: "October 31, 2025",
-      title: "AI in Business",
-      summary: "AI In Business & What It Can Do For You Artificial intelligence is no longer a",
+      authorAvatar: "/assets/images/pranay.png",
+      date: "May 12, 2026",
+      title: "Optimizing Your CRM with Intelligent Workflows",
+      summary: "AI In Business & What It Can Do For You. Artificial intelligence is no longer just a futuristic concept.",
       image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/ai-in-business-768x432.jpg",
-      link: "https://theaiautomationagency.ai/ai-in-business/"
+      link: "/advice"
     },
     {
       category: "Guides",
       author: "Pranay Pise",
-      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
-      date: "November 10, 2025",
-      title: "How AI Is Transforming UK Home Improvement Companies: Smarter Lead Generation, Sales, and CRMs",
-      summary: "How AI Is Transforming UK Home Improvement Companies: Smarter Lead Generation, Sales, and CRMs  Artificial intelligence",
+      authorAvatar: "/assets/images/pranay.png",
+      date: "May 14, 2026",
+      title: "How to Scale Your Operations Using Custom AI Agents",
+      summary: "How AI is transforming modern companies with smarter lead generation, sales, and automated CRMs.",
       image: "https://theaiautomationagency.ai/wp-content/uploads/2025/11/ai-for-solar-and-heat-pumps-installation-768x432.png",
-      link: "https://theaiautomationagency.ai/how-ai-is-transforming-uk-home-improvement-companies/"
+      link: "/advice"
     },
     {
-      category: null,
+      category: "Strategic",
       author: "Pranay Pise",
-      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
-      date: "November 11, 2025",
-      title: "Why Most UK Companies Fail with AI Automation — and How to Get It Right",
-      summary: "Artificial intelligence (AI) is transforming the way UK companies operate, promising faster processes, lower costs, and",
+      authorAvatar: "/assets/images/pranay.png",
+      date: "May 15, 2026",
+      title: "Maximizing ROI with Strategic AI Integration",
+      summary: "Strategic AI integration is transforming the way companies operate, promising faster processes and lower costs.",
       image: null,
-      link: "https://theaiautomationagency.ai/why-most-uk-companies-fail-with-ai-automation/"
+      link: "/advice"
     }
   ];
 

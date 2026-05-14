@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="/" className="footer-logo">
               <Image
                 src="/assets/images/logo.png"
-                alt="The AI Automation Agency Logo"
+                alt="Progress With AI Logo"
                 className="footer-logo-img"
                 height={134}
                 width={134}
@@ -73,7 +73,7 @@ export default function Footer() {
 
           <div className="footer-bottom-left">
             <p className="footer-copyright-text">
-              AI Automation Agency 2025, All rights reserved.
+              Progress With AI 2025, All rights reserved.
             </p>
           </div>
 

@@ -11,7 +11,7 @@ export default function Team({ title, subtitle }: TeamProps) {
     {
       name: "Pranay Pise",
       role: "Founder & Strategist",
-      image: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff&size=512",
+      image: "/assets/images/pranay.png",
       linkedin: "https://www.linkedin.com/in/pranaypise/",
       facebook: "#",
       x: "#"
