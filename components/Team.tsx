@@ -1,7 +1,12 @@
 import "./Team.css";
 import Link from "next/link";
 
-export default function Team() {
+interface TeamProps {
+  title?: string;
+  subtitle?: string;
+}
+
+export default function Team({ title, subtitle }: TeamProps) {
   const members = [
     {
       name: "Myles Robinson",
@@ -36,10 +41,14 @@ export default function Team() {
         {/* Section Header */}
         <div className="team-header animate-fade-in">
           <h2 className="team-section-title">
-            The <span className="team-highlight">Expert team</span> By Your Side
+            {title ? title : (
+              <>
+                The <span className="team-highlight">Expert team</span> By Your Side
+              </>
+            )}
           </h2>
           <p className="team-section-subtitle">
-            Our philosophy is simple — Give our clients access to the best current automation systems in each industry.
+            {subtitle || "Our philosophy is simple — Give our clients access to the best current automation systems in each industry."}
           </p>
         </div>
 
