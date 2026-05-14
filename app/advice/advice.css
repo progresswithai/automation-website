@@ -188,15 +188,16 @@
 }
 
 .newsletter-container {
-  background-color: #f6f1eb; /* Match the soft beige of blog cards */
+  background-color: #f6f1eb;
   border-radius: var(--radius-xl);
-  padding: 3rem 2rem;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  align-items: center;
-  max-width: 1000px;
+  align-items: flex-start;
+  max-width: 1100px;
   margin: 0 auto;
+  text-align: left;
 }
 
 .dark .newsletter-container {
@@ -208,6 +209,7 @@
   flex-direction: column;
   gap: 1.5rem;
   flex: 1;
+  width: 100%;
 }
 
 .newsletter-title {
@@ -283,14 +285,34 @@
 
 .newsletter-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: auto;
+  display: block;
+}
+
+/* Light/Dark Mode Visibility Toggles */
+.newsletter-img.light-only {
+  display: block;
+}
+
+.newsletter-img.dark-only {
+  display: none;
+}
+
+.dark .newsletter-img.light-only {
+  display: none;
+}
+
+.dark .newsletter-img.dark-only {
+  display: block;
 }
 
 @media (min-width: 768px) {
   .newsletter-container {
     flex-direction: row;
     padding: 4rem;
+    align-items: center;
+    gap: 4rem;
   }
   
   .newsletter-form {

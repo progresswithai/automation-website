@@ -7,8 +7,8 @@ export default function AdvicePage() {
   const posts = [
     {
       category: "Guides",
-      author: "Myles Robinson",
-      authorAvatar: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg",
+      author: "Pranay Pise",
+      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
       date: "October 23, 2025",
       title: "Why Choose AI Automation For Your Business Benefits",
       summary: "Unlock Efficiency: How AI Automation Consultants Can Transform Your UK Business In the fast-evolving digital economy,",
@@ -17,8 +17,8 @@ export default function AdvicePage() {
     },
     {
       category: "Guides",
-      author: "Myles Robinson",
-      authorAvatar: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg",
+      author: "Pranay Pise",
+      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
       date: "October 31, 2025",
       title: "AI in Business",
       summary: "AI In Business & What It Can Do For You Artificial intelligence is no longer a",
@@ -27,8 +27,8 @@ export default function AdvicePage() {
     },
     {
       category: "Guides",
-      author: "Myles Robinson",
-      authorAvatar: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg",
+      author: "Pranay Pise",
+      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
       date: "November 10, 2025",
       title: "How AI Is Transforming UK Home Improvement Companies: Smarter Lead Generation, Sales, and CRMs",
       summary: "How AI Is Transforming UK Home Improvement Companies: Smarter Lead Generation, Sales, and CRMs  Artificial intelligence",
@@ -37,8 +37,8 @@ export default function AdvicePage() {
     },
     {
       category: null,
-      author: "Myles Robinson",
-      authorAvatar: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg",
+      author: "Pranay Pise",
+      authorAvatar: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff",
       date: "November 11, 2025",
       title: "Why Most UK Companies Fail with AI Automation — and How to Get It Right",
       summary: "Artificial intelligence (AI) is transforming the way UK companies operate, promising faster processes, lower costs, and",
@@ -107,9 +107,9 @@ export default function AdvicePage() {
             
             <div className="newsletter-image-col">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img decoding="async" className="newsletter-img block dark:hidden" src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/newsletter.svg" loading="lazy" alt="Newsletter" />
+              <img decoding="async" className="newsletter-img light-only" src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/newsletter.svg" loading="lazy" alt="Newsletter" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img decoding="async" className="newsletter-img hidden dark:block" src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/newsletter-dark.svg" loading="lazy" alt="Newsletter Dark" />
+              <img decoding="async" className="newsletter-img dark-only" src="https://theaiautomationagency.ai/wp-content/uploads/2024/07/newsletter-dark.svg" loading="lazy" alt="Newsletter Dark" />
             </div>
           </div>
         </div>
