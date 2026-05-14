@@ -1,11 +1,11 @@
 .features-section {
   background-color: var(--background);
-  padding: 8rem 1.5rem;
+  padding: 6rem 1.5rem;
 }
 
 .features-section-header {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,10 +346,10 @@
 
 /* Leading Companies Section */
 .companies-section {
-  margin-top: 6rem;
+  margin-top: 4rem;
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  padding-top: 4.5rem;
+  padding-top: 3rem;
 }
 
 .companies-title {
@@ -432,8 +432,8 @@
 
 /* Top AI Systems Section */
 .top-systems-section {
-  margin-top: 8rem;
-  padding-top: 6rem;
+  margin-top: 5rem;
+  padding-top: 4rem;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -601,8 +601,8 @@
 
 /* 100+ Uses Section */
 .uses-section {
-  margin-top: 7rem;
-  padding-top: 5rem;
+  margin-top: 5rem;
+  padding-top: 4rem;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   text-align: center;
 }

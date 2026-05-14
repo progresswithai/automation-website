@@ -5,11 +5,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 8rem 1.5rem 4rem 1.5rem;
+  padding: 6rem 1.5rem 2rem 1.5rem;
   overflow: hidden;
   background-color: var(--background-dark);
   border-radius: var(--radius-xl);
-  margin: 80px 1.5rem 1.5rem 1.5rem;
+  margin: 80px 1.5rem 0 1.5rem;
 }
 
 .hero-background {

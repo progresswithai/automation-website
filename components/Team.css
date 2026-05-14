@@ -1,7 +1,7 @@
 .team-section {
   position: relative;
   background-color: #ffffff;
-  padding: 8rem 1.5rem;
+  padding: 6rem 1.5rem;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -42,7 +42,7 @@
 /* Section Header */
 .team-header {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;

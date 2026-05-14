@@ -4,7 +4,7 @@
   background-color: var(--background-dark);
   background: radial-gradient(circle at 50% 120%, #0d2820 0%, #070908 75%);
   color: #ffffff;
-  padding: 8rem 1.5rem;
+  padding: 6rem 1.5rem;
 }
 
 .pricing-bg-gradient {
@@ -57,7 +57,7 @@
 /* Title container styles */
 .pricing-title-container {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .pricing-section-title {
