@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logoImage from "@/app/image.png";
 import "./Header.css";
 
 export default function Header() {
@@ -22,10 +21,11 @@ export default function Header() {
           <div className="header-left">
             <Link href="/" className="logo-container">
               <Image 
-                src={logoImage} 
+                src="/assets/images/logo.png" 
                 alt="The AI Automation Agency" 
                 className="logo-image" 
                 height={38} 
+                width={150}
                 style={{ width: "auto", height: "38px", objectFit: "contain" }} 
                 priority 
               />
@@ -77,10 +77,11 @@ export default function Header() {
           <div className="mobile-nav-header">
             <Link href="/" className="logo-container" onClick={toggleMobileMenu}>
               <Image 
-                src={logoImage} 
+                src="/assets/images/logo.png" 
                 alt="The AI Automation Agency" 
                 className="logo-image" 
                 height={34} 
+                width={130}
                 style={{ width: "auto", height: "34px", objectFit: "contain" }} 
               />
             </Link>

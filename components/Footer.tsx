@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import footerLogo from "@/app/footer image.png";
 import "./Footer.css";
 
 export default function Footer() {
@@ -15,10 +14,11 @@ export default function Footer() {
           <div className="footer-brand-col">
             <Link href="/" className="footer-logo">
               <Image 
-                src={footerLogo} 
+                src="/assets/images/logo.png" 
                 alt="The AI Automation Agency Logo" 
                 className="footer-logo-img"
                 height={60}
+                width={200}
                 style={{ width: "auto", height: "60px", objectFit: "contain", transform: "scale(3.5)", transformOrigin: "left center" }}
               />
             </Link>

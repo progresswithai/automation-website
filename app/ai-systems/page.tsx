@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import logoImage from "@/app/image.png";
 import "./ai-systems.css";
 
 // Portait imports/references for Testimonial assets
