@@ -27,7 +27,7 @@ export default function ContactPage() {
 
           <h1 className="contact-title">Contact us</h1>
           <p className="contact-subtitle">
-            Call 0333 051 0634 or Feel free to reach out to us using the options below, and our dedicated team will respond to your inquiries promptly.
+            Call +91 70570 45814 or Feel free to reach out to us at Nal Stop, Pune Maharashtra. Our dedicated team will respond to your inquiries promptly.
           </p>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function ContactPage() {
             </form>
 
             <p className="form-outro">
-              Or drop us a message via <a href="mailto:sales@theaiautomationagency.ai" className="form-link">email</a>.
+              Or drop us a message via <a href="mailto:progresswithai@gmail.com" className="form-link">email</a>.
             </p>
             
           </div>

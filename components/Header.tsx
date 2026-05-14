@@ -37,7 +37,7 @@ export default function Header() {
               <Link href="/about" className="nav-link">About</Link>
               <Link href="/advice" className="nav-link">Advice</Link>
               <Link href="/contact-us" className="nav-link">Contact</Link>
-              <a href="tel:03330510634" className="nav-link phone-link">0333 051 0634</a>
+              <a href="tel:+917057045814" className="nav-link phone-link">+91 70570 45814</a>
             </nav>
           </div>
 
@@ -98,7 +98,7 @@ export default function Header() {
             <Link href="/about" className="mobile-nav-link" onClick={toggleMobileMenu}>About</Link>
             <Link href="/advice" className="mobile-nav-link" onClick={toggleMobileMenu}>Advice</Link>
             <Link href="/contact-us" className="mobile-nav-link" onClick={toggleMobileMenu}>Contact</Link>
-            <a href="tel:03330510634" className="mobile-nav-link mobile-phone-link" onClick={toggleMobileMenu}>0333 051 0634</a>
+            <a href="tel:+917057045814" className="mobile-nav-link mobile-phone-link" onClick={toggleMobileMenu}>+91 70570 45814</a>
             
             <div className="mobile-nav-action-wrapper">
               <Link href="/contact-us" className="mobile-get-automated-btn" onClick={toggleMobileMenu}>
