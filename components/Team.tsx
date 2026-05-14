@@ -11,16 +11,8 @@ export default function Team({ title, subtitle }: TeamProps) {
     {
       name: "Pranay Pise",
       role: "Founder & Strategist",
-      image: "/assets/images/founder.png",
+      image: "https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff&size=512",
       linkedin: "https://www.linkedin.com/in/pranaypise/",
-      facebook: "#",
-      x: "#"
-    },
-    {
-      name: "Jamie Robinson",
-      role: "Strategist",
-      image: "https://theaiautomationagency.ai/wp-content/uploads/2025/10/Jamie-Robinson-2.png",
-      linkedin: "#",
       facebook: "#",
       x: "#"
     }

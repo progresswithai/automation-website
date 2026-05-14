@@ -57,7 +57,7 @@ export default function AboutPage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Untitled-design-7.jpg" 
-                alt="Jamie and Myles automating in office" 
+                alt="Pranay automating in office" 
                 className="about-hero-image"
               />
             </div>
@@ -71,17 +71,17 @@ export default function AboutPage() {
           <div className="about-brands-track">
             <div className="about-brands-slider">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Hubspot.png" alt="HubSpot" className="about-brand-logo" />
+              <img src="/assets/images/Hubspot.png" alt="HubSpot" className="about-brand-logo" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zoho.png" alt="Zoho" className="about-brand-logo" />
+              <img src="/assets/images/zoho.png" alt="Zoho" className="about-brand-logo" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/zapier.png" alt="Zapier" className="about-brand-logo" />
+              <img src="/assets/images/zapier.png" alt="Zapier" className="about-brand-logo" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/salesforce.png" alt="Salesforce" className="about-brand-logo" />
+              <img src="/assets/images/salesforce.png" alt="Salesforce" className="about-brand-logo" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/monday.png" alt="Monday.com" className="about-brand-logo" />
+              <img src="/assets/images/monay.png" alt="Monday.com" className="about-brand-logo" />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/pipedrive.png" alt="Pipedrive" className="about-brand-logo" />
+              <img src="/assets/images/make.png" alt="Make" className="about-brand-logo" />
             </div>
           </div>
         </div>
@@ -209,18 +209,15 @@ export default function AboutPage() {
           <div className="executive-team-grid">
             <div className="executive-team-member">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img decoding="async" className="executive-team-img" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/1736887255947.jpeg" alt="Myles Robinson" />
+              <img 
+                decoding="async" 
+                className="executive-team-img" 
+                src="https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff" 
+                alt="Pranay Pise" 
+              />
               <div className="executive-team-info">
-                <h6 className="executive-team-name">Myles Robinson</h6>
+                <h6 className="executive-team-name">Pranay Pise</h6>
                 <span className="executive-team-role">Founder & CEO</span>
-              </div>
-            </div>
-            <div className="executive-team-member">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img decoding="async" className="executive-team-img" src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Jamie-Robinson-2.png" alt="Jamie Robinson" />
-              <div className="executive-team-info">
-                <h6 className="executive-team-name">Jamie Robinson</h6>
-                <span className="executive-team-role">Strategist</span>
               </div>
             </div>
           </div>

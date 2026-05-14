@@ -48,14 +48,14 @@ export default function Hero() {
         <div className="floating-user left-user">
           <div className="avatar-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" 
-              alt="Team member Myles" 
+              src="https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff" 
+              alt="Team member Pranay" 
               className="user-avatar"
             />
           </div>
           <img 
             src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/user-cursor-3.png" 
-            alt="Myles cursor" 
+            alt="Pranay cursor" 
             className="user-cursor"
           />
         </div>
@@ -64,14 +64,14 @@ export default function Hero() {
         <div className="floating-user right-user">
           <div className="avatar-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" 
-              alt="Team member Sarah" 
+              src="https://theaiautomationagency.ai/wp-content/uploads/2025/10/Jamie-Robinson-2.png" 
+              alt="Team member Jamie" 
               className="user-avatar"
             />
           </div>
           <img 
             src="https://theaiautomationagency.ai/wp-content/uploads/2024/11/user-cursor-1.png" 
-            alt="Sarah cursor" 
+            alt="Jamie cursor" 
             className="user-cursor"
           />
         </div>

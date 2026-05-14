@@ -14,8 +14,8 @@ export default function Features() {
   ];
 
   const row2 = [
-    { label: "Divider", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/divider.svg" },
-    { label: "Spacer", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/spacer.svg" },
+    { label: "Efficiency", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/divider.svg" },
+    { label: "Integration", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/spacer.svg" },
     { label: "Personalisation", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/image.svg" },
     { label: "Video", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/video.svg" },
     { label: "Navigation", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/11/map.svg" },

@@ -98,7 +98,7 @@ export function LatestPosts() {
           </div>
 
           <div className="insights-header-right animate-fade-in">
-            <Link href="https://theaiautomationagency.ai/category/guides/" target="_blank" className="insights-view-all-btn">
+            <Link href="/advice" className="insights-view-all-btn">
               View all posts
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="insights-btn-arrow">
                 <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -125,18 +125,18 @@ export function LatestPosts() {
                 
                 {/* Author Info */}
                 <div className="featured-post-author-row">
-                  <Link href="https://theaiautomationagency.ai/author/myles-robinson/" target="_blank">
+                  <div className="author-meta-details-wrap" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <img 
-                      src="https://secure.gravatar.com/avatar/5005a3783e368fc84c1b7ea3c064158075d7602573f5bcbf5ce268c2dedba565?s=40&d=mm&r=g" 
-                      alt="Myles Robinson" 
+                      src="https://ui-avatars.com/api/?name=Pranay+Pise&background=1b7a63&color=fff" 
+                      alt="Pranay Pise" 
                       className="author-avatar-img"
                     />
-                  </Link>
-                  <div className="author-meta-details">
-                    <Link href="https://theaiautomationagency.ai/author/myles-robinson/" target="_blank" className="author-meta-name">
-                      Myles Robinson
-                    </Link>
-                    <span className="author-meta-date">November 11, 2025</span>
+                    <div className="author-meta-details">
+                      <span className="author-meta-name" style={{ fontWeight: '600', color: 'var(--foreground)' }}>
+                        Pranay Pise
+                      </span>
+                      <span className="author-meta-date">November 11, 2025</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export function LatestPosts() {
               </p>
               
               <div className="final-cta-action">
-                <Link href="https://theaiautomationagency.ai/contact-us/" target="_self" className="final-cta-btn">
+                <Link href="/contact-us" className="final-cta-btn">
                   Get started
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="final-cta-btn-arrow">
                     <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>

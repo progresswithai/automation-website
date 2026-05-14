@@ -34,17 +34,17 @@ const testimonials = [
 
 const integrations = [
   { name: "Slack", tag: "Productivity", desc: "Notify your teammates of the latest activities with instant Slack messages.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-slack.svg" },
-  { name: "Salesforce", tag: "CRM", desc: "Notify your teammates of the latest activities with instant Slack messages.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-salesforce.svg" },
-  { name: "Stripe", tag: "Payment", desc: "Notify your teammates of the latest activities with instant Slack messages.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-stripe.svg" },
-  { name: "PayPal", tag: "Payment", desc: "Provide a world-class checkout experience for your customers.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-paypal.svg" },
-  { name: "HubSpot", tag: "CRM", desc: "Expand the ROI from your CRM and unlock easy generation and capabilities.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-hubspot.svg" },
-  { name: "Zapier", tag: "Integration platforms", desc: "Create custom, automated workflows using your favorite Zaps.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-zapier.svg" },
-  { name: "Slack", tag: "Productivity", desc: "Notify your teammates of the latest activities with instant Slack messages.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-slack.svg" },
-  { name: "Salesforce", tag: "CRM", desc: "Notify your teammates of the latest activities with instant Slack messages.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-salesforce.svg" },
-  { name: "Stripe", tag: "Payment", desc: "Notify your teammates of the latest activities with instant Slack messages.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-stripe.svg" },
-  { name: "PayPal", tag: "Payment", desc: "Provide a world-class checkout experience for your customers.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-paypal.svg" },
-  { name: "HubSpot", tag: "CRM", desc: "Expand the ROI from your CRM and unlock easy generation and capabilities.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-hubspot.svg" },
-  { name: "Zapier", tag: "Integration platforms", desc: "Create custom, automated workflows using your favorite Zaps.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-zapier.svg" }
+  { name: "Salesforce", tag: "CRM", desc: "Sync leads and customer data automatically across your entire sales pipeline.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-salesforce.svg" },
+  { name: "Stripe", tag: "Payment", desc: "Handle subscriptions and transactions with automated payment workflows.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-stripe.svg" },
+  { name: "PayPal", tag: "Payment", desc: "Provide a world-class checkout experience for your global customers.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-paypal.svg" },
+  { name: "HubSpot", tag: "CRM", desc: "Expand the ROI from your CRM and unlock easy lead generation capabilities.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-hubspot.svg" },
+  { name: "Zapier", tag: "Integration platforms", desc: "Create custom, automated workflows using thousands of your favorite apps.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-zapier.svg" },
+  { name: "Slack", tag: "Productivity", desc: "Enable real-time team collaboration with automated channel updates.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-slack.svg" },
+  { name: "Salesforce", tag: "CRM", desc: "Automate complex sales processes and reporting dashboards.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-salesforce.svg" },
+  { name: "Stripe", tag: "Payment", desc: "Streamline recurring billing and invoice management.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-stripe.svg" },
+  { name: "PayPal", tag: "Payment", desc: "Securely process international payments with automated fraud checks.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-paypal.svg" },
+  { name: "HubSpot", tag: "CRM", desc: "Scale your marketing efforts with automated email sequences.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-hubspot.svg" },
+  { name: "Zapier", tag: "Integration platforms", desc: "Connect your entire tech stack with powerful multi-step Zaps.", icon: "https://theaiautomationagency.ai/wp-content/uploads/2024/07/tool-zapier.svg" }
 ];
 
 const faqs = [
